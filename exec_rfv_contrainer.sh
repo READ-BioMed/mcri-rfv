@@ -1,0 +1,1 @@
+docker exec -it rfv_predict bash start.sh
