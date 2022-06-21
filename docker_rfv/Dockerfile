@@ -15,9 +15,11 @@ RUN apt-get -qq update && \
     mkdir $METAMAP
 
 
+RUN pip3 install cython 
+RUN pip3 install numpy
 RUN pip3 install xlsxwriter nltk inflect pandas networkx requests pymetamap
 
-RUN git clone https://github.com/siabar/MCRI.git MCRI
+RUN git clone https://github.com/READ-BioMed/mcri-rfv.git MCRI
 
 WORKDIR $HOME_MCRI/src
 
